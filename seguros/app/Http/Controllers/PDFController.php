@@ -35,6 +35,7 @@ class PDFController extends Controller
     $negative -> cedula = $request -> input('cedula');
     $negative -> fecha_nac = $request -> input('fecha_nac');
     $negative ->save();
+      //genera el reporte en PDF   
     $pdf = PDF::loadView('negativo', compact('negative'));
     return $pdf->stream('negativo.pdf');
     

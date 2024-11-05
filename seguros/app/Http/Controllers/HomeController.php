@@ -43,7 +43,7 @@ class HomeController extends Controller
         //se realiza la consulta mediante scope en el modelo y paginacion 
         
         // si vacio
-        $afiliados = Affiliate::nombres($nombre)->apellidos($apellido)->cedula($cedula)->paginate(8)->appends($pagina); 
+        $afiliados = Affiliate::nombres($nombre)->apellidos($apellido)->cedula($cedula)->paginate(4)->appends($pagina); 
         //dd($afiliados);
         return view('buscar', compact('afiliados')) ;
         

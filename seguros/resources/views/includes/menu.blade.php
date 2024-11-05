@@ -16,7 +16,7 @@
               <a href="/buscar" class="list-group-item list-group-item-action">
                   Buscar registros
               </a> 
-              <a href="/reportes" class="list-group-item list-group-item-action">
+              <a href="/reportes" class="list-group-item list-group-item-action" target="_blank">
                   Reporte general
               </a> 
             
